@@ -111,7 +111,7 @@ We adapted this model to our own use case with simplified **raw → staging → 
 
 Here’s a visual of the original `jaffle_shop` architecture that guided our planning:
 
-![Jaffle Shop Architecture](./jaffle_shop_architecture.png)
+![Jaffle Shop Architecture](./jaffle_shop_architecture.webp)
 
 ## 🏗️ Snowflake Database Structure
 
