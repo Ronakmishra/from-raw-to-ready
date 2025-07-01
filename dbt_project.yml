@@ -1,0 +1,13 @@
+name: 'my_new_project'
+version: '1.0.0'
+model-paths: ["models"]
+seed-paths: ["seeds"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+test-paths: ["tests"]
+
+
+
+# This setting configures which "profile" dbt uses for this project.
+# profile: 'default'
