@@ -59,8 +59,8 @@ We used the `RA_CUSTOMERS`, `RAW_ORDERS`, and `RAW_PAYMENTS` tables in the **RAW
 
 We followed a **3-layer dbt modeling approach**, commonly used in modern data teams to promote modularity and maintainability:
 
-1. **Raw Layer** – Mirrors source data as-is from Snowflake  
-2. **Staging Layer** – Applies lightweight cleaning and renaming  
+1. **Raw Layer** – Mirrors source data as-is from Snowflake
+2. **Staging Layer** – Applies lightweight cleaning and renaming
 3. **Data Marts (BI Layer)** – Contains business logic, aggregations, and is exposed to analysts
 
 📌 Here's how the data flows through each layer in our project:
@@ -87,8 +87,6 @@ We followed a **3-layer dbt modeling approach**, commonly used in modern data te
 - Uses CTEs and joins to generate summary tables
 - Deployed to a separate Snowflake DB: `GOLDEN_LAYER_DB`
 
-
-
 📦 All models in the **marts layer** are configured to write into a separate Snowflake DB: `GOLDEN_LAYER_DB.ANALYTICS`
 
 ```sql
@@ -96,8 +94,9 @@ We followed a **3-layer dbt modeling approach**, commonly used in modern data te
     database='GOLDEN_LAYER_DB',
     schema='ANALYTICS'
 ) }}
- ```
- ## 🧭 Inspiration from Jaffle Shop
+```
+
+## 🧭 Inspiration from Jaffle Shop
 
 Our dbt project structure was inspired by the well-known `jaffle_shop` architecture — a community standard that showcases modular, scalable dbt practices.
 
@@ -114,24 +113,23 @@ Here’s a visual of the original `jaffle_shop` architecture that guided our pla
 
 ![Jaffle Shop Architecture](./images/jaffle_shop_architecture.png)
 
-
- ## 🏗️ Snowflake Database Structure
+## 🏗️ Snowflake Database Structure
 
 To follow industry best practices, we separated each dbt layer into its own **Snowflake database**:
 
-- `DB_ECOMM` for RAW source data  
-- `STAGING` for staging models (cleaned, renamed columns)  
+- `DB_ECOMM` for RAW source data
+- `STAGING` for staging models (cleaned, renamed columns)
 - `GOLDEN_LAYER_DB` for final **data mart** models used by BI teams
 
 This structure improves:
-- Access control between teams  
-- Performance tuning per layer  
+
+- Access control between teams
+- Performance tuning per layer
 - Clarity in model lineage and ownership
 
 📸 Here’s a visual snapshot of how the layers were structured in Snowflake:
 
-![Snowflake DB Structure](./images/db_structure.png)
-
+![Snowflake DB Structure](./db_structure.png)
 
 ## 📊 DAG & Lineage Graph
 
@@ -150,7 +148,6 @@ Here’s a glimpse of our dbt **model DAG** showing the data flow from the raw l
 You can also explore the complete interactive documentation and lineage via dbt Cloud:
 
 👉 [View dbt Docs](https://ly421.us1.dbt.com/accounts/70471823470455/develop/70471823938707/docs/index.html#!/overview/my_new_project)
-
 
 ---
 
@@ -180,28 +177,28 @@ You can also explore the complete interactive documentation and lineage via dbt 
 
 ## 🧩 Tech Stack
 
-- **Snowflake** – Data warehouse  
-- **dbt** – Transformation and modeling  
-- **SQL** – Transformations and logic  
-- **GitHub** – Version control and collaboration  
+- **Snowflake** – Data warehouse
+- **dbt** – Transformation and modeling
+- **SQL** – Transformations and logic
+- **GitHub** – Version control and collaboration
 
 ---
 
 ## 🧪 Next Steps
 
-- Add more complex joins, time-based aggregations  
-- Integrate dbt Cloud for scheduled runs and CI/CD  
-- Add `schema.yml` for tests and descriptions  
-- Build BI dashboards on top of the Golden Layer  
+- Add more complex joins, time-based aggregations
+- Integrate dbt Cloud for scheduled runs and CI/CD
+- Add `schema.yml` for tests and descriptions
+- Build BI dashboards on top of the Golden Layer
 
 ---
 
 ## 📎 Screenshots (Add Links Here)
 
-- 📸 Snowflake Schema  
-- 📸 Staging Transformation Code  
-- 📸 Customer Summary Output Table  
-- 📸 DAG Lineage Graph  
+- 📸 Snowflake Schema
+- 📸 Staging Transformation Code
+- 📸 Customer Summary Output Table
+- 📸 DAG Lineage Graph
 
 ---
 
