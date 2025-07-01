@@ -8,7 +8,8 @@ final as (
     select id as PAYMENT_ID,
     ORDER_ID,
     PAYMENT_METHOD AS PAYMENT_MODE,
-    AMOUNT/100 AS SALES_AMOUNT
+    AMOUNT/100 AS AMOUNT
+
     from raw
 )
 select * from final
