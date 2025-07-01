@@ -8,6 +8,11 @@
 -- ->The date of their most recent order
 -- ->To achieve this, we pulled data from the staging layer (stg_customers, stg_orders, stg_payments) and applied transformations in the data mart layer using CTEs for clarity and easier debugging.
 
+{{
+    config(
+        Database='GOLDEN_LAYER_DB',
+        schema='Analytics'
+    )}}
 
 with customers as (
         select * from {{ref('stg_customers')}}
@@ -65,4 +70,4 @@ final_table as (
     order by cl.CUSTOMER_ID
 )
 
-select * from final_table
+select * from final_table 
