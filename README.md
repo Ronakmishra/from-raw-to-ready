@@ -195,15 +195,6 @@ You can also explore the complete interactive documentation and lineage via dbt 
 
 ---
 
-## 📎 Screenshots (Add Links Here)
-
-- 📸 Snowflake Schema
-- 📸 Staging Transformation Code
-- 📸 Customer Summary Output Table
-- 📸 DAG Lineage Graph
-
----
-
 ## 📫 Let's Connect
 
 If you liked the project or have feedback, feel free to reach out via GitHub or LinkedIn!
