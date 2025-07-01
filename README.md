@@ -65,7 +65,7 @@ We followed a **3-layer dbt modeling approach**, commonly used in modern data te
 
 📌 Here's how the data flows through each layer in our project:
 
-![Layered Architecture Plan](./images/layered_architecture.png)
+![Layered Architecture Plan](./layered_architecture.png)
 
 ---
 
@@ -111,7 +111,7 @@ We adapted this model to our own use case with simplified **raw → staging → 
 
 Here’s a visual of the original `jaffle_shop` architecture that guided our planning:
 
-![Jaffle Shop Architecture](./images/jaffle_shop_architecture.png)
+![Jaffle Shop Architecture](./jaffle_shop_architecture.png)
 
 ## 🏗️ Snowflake Database Structure
 
@@ -137,17 +137,19 @@ Here’s a glimpse of our dbt **model DAG** showing the data flow from the raw l
 
 ### 📌 Model DAG
 
-![Model DAG](./DAG/dag1.png)
+![Model DAG](./DAG/dag1.jpg)
 
 ---
 
 ### 📌 Lineage Graph
 
-![Lineage Graph](./DAG/dag2.png)
+![Lineage Graph](./DAG/dag2.jpg)
 
 You can also explore the complete interactive documentation and lineage via dbt Cloud:
 
 👉 [View dbt Docs](https://ly421.us1.dbt.com/accounts/70471823470455/develop/70471823938707/docs/index.html#!/overview/my_new_project)
+
+> ⚠️ **Note:** This link points to my personal dbt Cloud project. If my account becomes inactive or expires, the documentation may no longer be accessible.
 
 ---
 
