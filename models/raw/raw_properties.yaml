@@ -1,10 +1,10 @@
-sources:
-  - name: "Snowflake_Source"
-    database: DB_ECOMM
-    schema: RAW
+# sources:
+#   - name: "Snowflake_Source"
+#     database: DB_ECOMM
+#     schema: RAW
 
-    tables:
-      - name: raw_customers
-      - name: raw_orders
-      - name: raw_payments
+#     tables:
+#       - name: raw_customers
+#       - name: raw_orders
+#       - name: raw_payments
 
