@@ -137,13 +137,13 @@ Here’s a glimpse of our dbt **model DAG** showing the data flow from the raw l
 
 ### 📌 Model DAG
 
-![Model DAG](./DAG/dag1.jpg)
+![Model DAG](./DAG/dag1.png)
 
 ---
 
 ### 📌 Lineage Graph
 
-![Lineage Graph](./DAG/dag2.jpg)
+![Lineage Graph](./DAG/dag2.png)
 
 You can also explore the complete interactive documentation and lineage via dbt Cloud:
 
