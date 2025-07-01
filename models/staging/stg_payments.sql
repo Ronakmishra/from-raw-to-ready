@@ -1,3 +1,8 @@
+{{ config(
+    database='STAGING',
+    schema='stg'
+) }}
+
 with raw as (
 
     select * from {{source("Snowflake_Source","raw_payments")}}
