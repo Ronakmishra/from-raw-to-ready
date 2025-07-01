@@ -5,7 +5,7 @@ with raw as (
 
 final as (
 
-    select id as Customer_Id,
+    select id as CUSTOMER_ID,
     FIRST_NAME,
     LAST_NAME
     from raw

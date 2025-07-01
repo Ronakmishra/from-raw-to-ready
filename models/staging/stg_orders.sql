@@ -6,7 +6,8 @@ with raw as (
 final as (
 
     select id as ORDER_ID,
-    USER_ID,
+    USER_ID as CUSTOMER_ID,
+    ORDER_DATE,
     STATUS
     from raw
 )
